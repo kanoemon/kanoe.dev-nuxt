@@ -1,0 +1,18 @@
+{
+  "name": "kanoe.dev-nuxt",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.11.1",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.32.2",
+    "sass-loader": "^10.1.0"
+  }
+}
