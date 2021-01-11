@@ -6,7 +6,11 @@
 
     <div class="article__tags">
       <ul>
-        <li v-for="tag of article.tags" :key="tag">#{{ tag }}</li>
+        <li v-for="tag of article.tags" :key="tag">
+          <NuxtLink :to="`tags/${tag}`">
+            #{{ tag }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
 
