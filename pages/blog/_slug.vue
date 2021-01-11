@@ -54,10 +54,10 @@ $bottom-space: 60px;
   blockquote {
     position: relative;
     font-style: italic;
-    background: #efefef;
     margin: 30px 0;
     padding: 30px 15px 8px 15px;
     font-size: 0.9rem;
+    border-left: 3px solid #5bc8ac;
   }
 
   blockquote:before{
@@ -67,7 +67,7 @@ $bottom-space: 60px;
     left: 3px;
     content: "“";
     font-family: sans-serif;
-    color: #cfcfcf;
+    color: #5bc8ac;
     font-size: 70px;
     line-height: 1;
 }
