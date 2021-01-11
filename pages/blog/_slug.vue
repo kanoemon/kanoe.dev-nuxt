@@ -19,8 +19,6 @@
 </template>
 
 <script>
-// https://dev.to/matthewblewitt/build-a-static-generated-blog-with-nuxt-v2-13-0-and-nuxt-content-387p
-
 export default {
   methods: {
     formatDate(date) {
