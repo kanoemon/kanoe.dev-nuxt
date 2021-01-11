@@ -51,7 +51,7 @@ export default {
 $bottom-space: 60px;
 
 .article {
-  line-height: 30px;
+  line-height: 2.3;
 
   blockquote {
     position: relative;
@@ -85,6 +85,7 @@ $bottom-space: 60px;
   h2 {
     font-size: 2rem;
     font-weight: 400;
+    line-height: 1.2;
   }
 
   &__meta {
@@ -111,5 +112,9 @@ $bottom-space: 60px;
 
 .nuxt-content-container {
   margin-bottom: $bottom-space;
+
+  h2 {
+    border-bottom: 3px solid #5bc8ac;
+  }
 }
 </style>
