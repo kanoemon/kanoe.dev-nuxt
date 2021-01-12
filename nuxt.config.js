@@ -1,5 +1,5 @@
 export default {
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
   components: true,
   css: [
     '@/assets/scss/main.scss'
@@ -10,5 +10,11 @@ export default {
         theme: 'prism-themes/themes/prism-vsc-dark-plus.css'
       }
     }
+  },
+  head: {
+    title: 'kanoe.dev',
+    meta: [
+      { charset: 'utf-8' }
+    ]
   }
 }
