@@ -1,7 +1,6 @@
 ---
 title: リスコフの置換原則(Liskov substitution principle)
-date: "2020-10-29"
-tags: ["programming", "design"]
+tags: ["プログラミング", "設計"]
 ---
 
 リスコフの置換原則(Liskov substitution principle)は1988年にBarbara Liskovが示した「継承」に関する原則です。

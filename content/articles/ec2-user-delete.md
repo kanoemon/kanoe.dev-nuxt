@@ -1,7 +1,6 @@
 ---
 title: EC2からec2-userを削除する
-date: "2020-12-13"
-tags: ["aws", "linux"]
+tags: ["AWS", "Linux"]
 ---
 
 EC2のデフォルトユーザ、ec2-userを削除して使えなくする流れです。

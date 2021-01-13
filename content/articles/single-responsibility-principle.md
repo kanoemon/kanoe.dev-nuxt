@@ -1,7 +1,6 @@
 ---
 title: 単一責任の原則(SRP)
-date: "2020-10-14"
-tags: ["programming", "design"]
+tags: ["プログラミング", "設計"]
 ---
 
 SOLID原則のひとつ、単一責任の原則。  

@@ -1,6 +1,6 @@
 <template>
   <div class="tags">
-    <h2>{{ tag }}</h2>
+    <h2>#{{ tag }}</h2>
     <ul class="tags-articles">
       <li v-for="(article, index) of articles" :key="index" class="tags-articles__item">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">

@@ -1,7 +1,6 @@
 ---
 title: インタフェース分離の原則(Interface Segregation principle)
-date: "2020-11-02"
-tags: ["programming", "design"]
+tags: ["プログラミング", "設計"]
 ---
 
 インターフェース分離の原則(Interface Segregation Principle)。  

@@ -1,7 +1,6 @@
 ---
 title: PHPで複数プロセスを制御する
-date: "2020-10-23"
-tags: ["php", "linux"]
+tags: ["PHP", "Linux"]
 ---
 
 PHPで複数プロセスの制御のやり方。

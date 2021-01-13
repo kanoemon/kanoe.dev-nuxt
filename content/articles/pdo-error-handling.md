@@ -1,7 +1,6 @@
 ---
 title: "PDOのERRMODE_EXCEPTION無しのエラーハンドリング"
-date: "2020-08-11"
-tags: ["php"]
+tags: ["PHP"]
 ---
 
 たまにPDOをERRMODE_EXCEPTIONを指定せずに使っていて、1つ処理をするたびにif文でエラーハンドリングをしているプログラムを見かけます。

@@ -1,7 +1,6 @@
 ---
 title: "docker-composeのMySQLのイメージの環境変数"
-date: "2020-09-05"
-tags: ["docker"]
+tags: ["Docker"]
 ---
 
 docker-composeでコンテナ内で環境変数を設定するには、docker-compose.ymlでenvironmentキーを使って指定します。

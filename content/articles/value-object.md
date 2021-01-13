@@ -1,7 +1,6 @@
 ---
 title: Value Objectを不変にする理由
-date: "2020-11-08"
-tags: ["designpattern", "ddd"]
+tags: ["デザインパターン", "DDD"]
 ---
 
 Value Objectの一番の特徴は不変であることです。

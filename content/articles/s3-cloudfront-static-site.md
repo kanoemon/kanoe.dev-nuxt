@@ -1,7 +1,6 @@
 ---
 title: S3とCloudFrontで静的Webサイトをつくる
-date: "2020-02-16"
-tags: ["aws"]
+tags: ["AWS"]
 ---
 
 S3でホストされている静的WebサイトにCloudFrontをかませる方法です。AWSクラウドデザインパターンのCache Distributionパターンにあたるサーバ構成です。

@@ -1,7 +1,6 @@
 ---
 title: Rubyのキーワード引数
-date: "2020-10-11"
-tags: ["ruby"]
+tags: ["Ruby"]
 ---
 
 ```ruby
