@@ -1,6 +1,15 @@
 export default {
-  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxt/content', 
+    '@nuxtjs/sitemap', 
+    '@nuxtjs/style-resources'
+  ],
   components: true,
+  styleResources: {
+    scss: [
+      '@/assets/scss/_variable.scss'
+    ]
+  },
   css: [
     '@/assets/scss/main.scss'
   ],

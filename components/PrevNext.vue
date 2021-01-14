@@ -35,6 +35,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: $color-text;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $color-primary;
+}
+
 .prevnext {
   display: flex;
   justify-content: space-between;
