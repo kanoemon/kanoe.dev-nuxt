@@ -31,5 +31,14 @@ export default {
         crossorigin: 'anonymous'
       }
     ]
+  },
+  sitemap: {
+    hostname: 'https://kanoe.dev',
+    routes: async() => {
+      const { $content } = require('@nuxt/content')
+      const articles = await $content('articles').only(['path', 'slug']).fetch()
+
+      return articles.map(article => '/blog/' + article.slug)
+    }
   }
 }

@@ -37,7 +37,6 @@ export default {
   },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
-    console.log(article);
 
     const [prev, next] = await $content('articles', { deep: true })
       .only(['title', 'slug'])
