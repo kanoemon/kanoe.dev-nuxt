@@ -2,7 +2,9 @@ export default {
   modules: [
     '@nuxt/content', 
     '@nuxtjs/sitemap', 
-    '@nuxtjs/style-resources',
+    '@nuxtjs/style-resources'
+  ],
+  buildModules: [
     '@nuxtjs/google-analytics'
   ],
   target: 'static',
