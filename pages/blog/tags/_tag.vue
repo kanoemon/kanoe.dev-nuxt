@@ -19,7 +19,7 @@ export default {
     const articles = await $content('articles', {deep: true})
       .where({ tags: { $contains: tag }})
       .only(['title', 'slug', 'createdAt', 'date'])
-      .sortBy('createdAt', 'desc')
+      //.sortBy('createdAt', 'desc')
       .sortBy('date', 'desc')
       .fetch()
 
