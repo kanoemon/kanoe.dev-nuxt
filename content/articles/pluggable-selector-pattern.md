@@ -18,7 +18,7 @@ date: "2020/10/03 00:00:00"
 
 #### 1. Greetingを継承してサブクラスを追加するパターン
 
-```php:title=GreetingJapanese.php
+```php[GreetingJapanese.php]
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -32,7 +32,7 @@ class GreetingJapanese extends Greeting
 }
 ```
 
-```php:title=GreetingEnglish.php
+```php[GreetingEnglish.php]
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -63,7 +63,7 @@ echo $greetingEnglish->greet();
 今回のようなサブクラスを追加するパターンだと、1つのメソッドしか実装されていないクラスが新しく作られることになり、少し過剰な実装にも見えます。
 そのため、既存のGreetingクラスに新しくメソッドを追加し、そのメソッドで使うメソッドを切り替えられるように変えてみます。
 
-```php:title=Greeting.php
+```php[Greeting.php]
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -110,7 +110,7 @@ echo $greeting->greet('english');
 今追加している機能は日本語と英語だけですが、これが中国語、ドイツ語、フランス語・・・と増えていくとgreetメソッドにどんどん分岐が増えていくことになります。
 そのため、今度は引数で受け取った文字列からメソッド名を動的に生成し、分岐を追加しなくてもすむようにしてみます。
 
-```php:title=Greeting.php
+```php[Greeting.php]
 <?php
 
 namespace DesignPatterns\PluggableSelector;

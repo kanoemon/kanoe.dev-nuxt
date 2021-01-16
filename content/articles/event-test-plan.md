@@ -29,7 +29,7 @@ date: "2020/09/21 00:00:00"
 
 TDDと同じで早くデバッグするという考え方なら、都度成果物をテストしていく方が効率がいいのかもしれないなー。
 
-`oembed: https://speakerdeck.com/nihonbuson/improving-convinced-testing-activities`
+<script async class="speakerdeck-embed" data-id="3ed816b5ecec486ebe92cb195832ae59" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## まとめ
 

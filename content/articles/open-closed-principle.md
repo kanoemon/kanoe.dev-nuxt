@@ -23,12 +23,12 @@ OCPは1988年にBertrand Meyerが生み出したとされている原則です�
 
 以下はOCPを違反している例です。
 
-```php:title=client.php
+```php[client.php]
 // 機能呼び出し側
 $userService->charge('credit', $user);
 ```
 
-```php:title=UserService.php
+```php[UserService.php]
 class UserService
 {
     public function charge($type, $user)
@@ -44,7 +44,7 @@ class UserService
 }
 ```
 
-```php:title=CreditCard.php
+```php[CreditCard.php]
 class CreditCard
 {
   public function charge($user, $money)
@@ -65,11 +65,11 @@ class CreditCard
 
 これをOCPを守るようにリファクタリングします。
 
-```php:title=client.php
+```php[client.php]
 $userService->charge(new CreditCard(), $user);
 ```
 
-```php:title=UserService.php
+```php[UserService.php]
 class UserService
 {
     public function charge(AbstractWallet $wallet, $user)
@@ -79,7 +79,7 @@ class UserService
 }
 ```
 
-```php:title=CreditCard.php
+```php[CreditCard.php]
 class CreditCard extends AbstractWallet
 {
   public function charge($user, $money)
@@ -88,7 +88,7 @@ class CreditCard extends AbstractWallet
 }
 ```
 
-```php:title=AbstractWallet.php
+```php[AbstractWallet.php]
 abstract class AbstractWallet
 {
   abstract public function charge($user, $money);

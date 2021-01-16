@@ -90,6 +90,10 @@ export default {
   padding-bottom: 2rem;
   border-bottom: 1px solid $color-text-light;
 
+  a {
+    color: $color-primary;
+  }
+
   h2, h3, h4, h5 {
     font-weight: 500;
   }
@@ -144,5 +148,19 @@ export default {
       line-height: 1;
     }
   }
+
+  .nuxt-content-highlight {
+    position: relative;
+  }
+  .nuxt-content-highlight .filename {
+    font-family: $font-family-code;
+    position: absolute;
+    right: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+  }
 }
+
 </style>

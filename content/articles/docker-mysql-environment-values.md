@@ -45,7 +45,7 @@ MYSQL_USERで設定したユーザのパスワードです。
 完成系のサンプルです。  
 （今試している対象のシステムがかなりレガシーなので、古めのMySQLのバージョンを指定しています）
 
-```yml:title=docker-compose.yml
+```yml[docker-compose.yml]
 version: '3'
 services:
  mysql:
@@ -57,7 +57,7 @@ services:
      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 ```
 
-```yml:title=.env
+```yml[.env]
 MYSQL_ROOT_PASSWORD=adminpassword
 MYSQL_USER=testuser
 MYSQL_PASSWORD=testpassword
