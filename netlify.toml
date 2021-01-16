@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/2020/:date-:slug"
+  to = "/blog/:slug"
+  force = true
