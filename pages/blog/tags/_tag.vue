@@ -1,13 +1,7 @@
 <template>
   <div class="tags">
-    <h2>#{{ tag }}</h2>
-    <ul class="tags-articles">
-      <li v-for="(article, index) of articles" :key="index" class="tags-articles__item">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          {{ article.title }}
-        </NuxtLink>
-      </li>
-    </ul>
+    <h1 class="tags__title">#{{ tag }}</h1>
+    <articles :articles="articles"></articles>
   </div>
 </template>
 
@@ -24,8 +18,9 @@ export default {
 
     const articles = await $content('articles', {deep: true})
       .where({ tags: { $contains: tag }})
-      .only(['title', 'img', 'slug', 'createdAt'])
+      .only(['title', 'slug', 'createdAt', 'date'])
       .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
 
     return {
@@ -37,16 +32,12 @@ export default {
 </script>
 
 <style lang="scss">
-.tags-articles{
-  list-style: none;
-
-  &__item {
-    font-size: 1.2rem;
-    padding-bottom: 10px;
-  }
-
-  &__item:before {
-    content: '-';
+.tags {
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 550;
+    line-height: 1.4;
+    margin-bottom: 2rem;
   }
 }
 </style>

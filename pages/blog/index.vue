@@ -2,15 +2,7 @@
   <div>
     <div class="blog" v-for="(year, index) of years" :key="index">
       <h2>{{ year }}</h2>
-      <ul class="blog-articles">
-        <li v-for="article of articlesGroupBy[year]" :key="article.slug" class="blog-articles__item">
-          {{ formatDate(article) }}
-          <span class="separation">-</span>
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-            {{ article.title }}
-          </NuxtLink>
-        </li>
-      </ul>
+      <articles :articles="articlesGroupBy[year]"></articles>
     </div>
   </div>
 </template>
@@ -56,19 +48,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.blog-articles{
-  list-style: none;
-  padding: 0;
-
-  &__item {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-
-    .separation {
-      padding: 0 0.5rem;
-    }
-  }
-}
-</style>
