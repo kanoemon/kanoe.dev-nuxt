@@ -12,7 +12,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "nuxt": "^2.14.12",
     "prism-themes": "^1.5.0",
-    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/google-analytics": "^2.4.0"
   },
   "devDependencies": {
     "fibers": "^5.0.0",
