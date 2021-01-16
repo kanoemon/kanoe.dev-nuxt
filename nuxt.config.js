@@ -46,11 +46,11 @@ export default {
     }
   },
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+    id: 'dummy'
   },
   publicRuntimeConfig: {
     googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+      id: 'dummy'
     }
   }
 }
