@@ -4,7 +4,7 @@
       <h2>{{ year }}</h2>
       <ul class="blog-articles">
         <li v-for="article of articlesGroupBy[year]" :key="article.slug" class="blog-articles__item">
-          {{ formatDate(article.createdAt) }}
+          {{ formatDate(article) }}
           <span class="separation">-</span>
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
             {{ article.title }}
@@ -18,7 +18,8 @@
 <script>
 export default {
   methods: {
-    formatDate(date) {
+    formatDate(article) {
+      let date = article.date || article.createdAt;
       let datetime = new Date(date);
       let month = datetime.getMonth() + 1;
       return `${datetime.getFullYear()}/${month.toString().padStart(2, 0)}/${datetime.getDate().toString().padStart(2, 0)}`;
@@ -26,13 +27,16 @@ export default {
   },
   async asyncData({ $content, params }) {
     const articles = await $content('articles', {deep: true})
-      .only(['title', 'slug', 'createdAt'])
+      .only(['title', 'slug', 'createdAt', 'date'])
       .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
 
     let articlesGroupBy = {};
     articles.forEach(article => {
-      let year = new Date(article.createdAt).getFullYear();
+      let date = article.date || article.createdAt;
+      let year = new Date(date).getFullYear();
+
       if(typeof articlesGroupBy[year]=="undefined") articlesGroupBy[year]=[];
       articlesGroupBy[year].push(article);
     });

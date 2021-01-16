@@ -1,6 +1,7 @@
 ---
 title: Rubyのキーワード引数
 tags: ["Ruby"]
+date: "2020/10/11 00:00:00"
 ---
 
 ```ruby

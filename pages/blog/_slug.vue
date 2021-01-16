@@ -2,7 +2,7 @@
   <article class="article">
     <h1 class="article__title">{{ article.title }}</h1>
     <p class="article__meta">
-      {{ formatDate(article.createdAt) }} - 
+      {{ formatDate(article) }} - 
       <span class="tags">
           <span v-for="tag of article.tags" :key="tag">
             <NuxtLink :to="`tags/${tag}`">
@@ -30,9 +30,11 @@
 <script>
 export default {
   methods: {
-    formatDate(date) {
+    formatDate(article) {
+      let date = article.date || article.createdAt;
       let datetime = new Date(date);
-      return `${datetime.getFullYear()}/${datetime.getMonth()+1}/${datetime.getDate()}`;
+      let month = datetime.getMonth() + 1;
+      return `${datetime.getFullYear()}/${month.toString().padStart(2, 0)}/${datetime.getDate().toString().padStart(2, 0)}`;
     }
   },
   async asyncData({ $content, params }) {
@@ -41,6 +43,7 @@ export default {
     const [prev, next] = await $content('articles', { deep: true })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
+      .sortBy('date', 'desc')
       .surround(params.slug)
       .fetch();
 

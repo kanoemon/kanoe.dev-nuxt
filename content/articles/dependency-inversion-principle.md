@@ -1,6 +1,7 @@
 ---
 title: 依存関係逆転の原則(Dependency Inversion Principle)
 tags: ["プログラミング", "設計"]
+date: "2020/11/21 00:00:00"
 ---
 
 依存関係逆転の原則(Dependency Inversion Principle)とはモジュールを疎結合に保つための原則です。

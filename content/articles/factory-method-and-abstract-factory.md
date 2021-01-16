@@ -1,6 +1,7 @@
 ---
 title: Factory MethodパターンとAbstract Factoryパターン
 tags: ["デザインパターン"]
+date: "2020/11/15 00:00:00"
 ---
 
 Factory MethodパターンとAbstract Factoryパターンの違いをみていきます。

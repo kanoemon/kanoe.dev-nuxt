@@ -1,6 +1,7 @@
 ---
 title: 使い方注意なPluggable Selectorパターン
 tags: ["PHP", "デザインパターン"]
+date: "2020/10/3 00:00:00"
 ---
 
 <a href="https://www.amazon.co.jp/dp/B077D2L69C/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">テスト駆動開発</a>の本で学んだPluggable Selectorパターンのまとめです。

@@ -1,6 +1,7 @@
 ---
 title: オブジェクトを作るメソッド Factory Methodパターン
 tags: ["デザインパターン"]
+date: "2020/10/16 00:00:00"
 ---
 
 <a href="https://www.amazon.co.jp/dp/B077D2L69C/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">テスト駆動開発</a>のデザインパターンの章を読んでいたら、Factory Methodパターンの内容が今まで認識してたものとちょっと違ってました。

@@ -1,6 +1,7 @@
 ---
 title: オープン・クローズドの原則(Open-Closed Principle)
 tags: ["プログラミング", "設計"]
+date: "2020/10/27 00:00:00"
 ---
 
 オープン・クローズドの原則(Open-Closed Principle)。  
