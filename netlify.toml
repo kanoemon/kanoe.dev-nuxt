@@ -2,3 +2,104 @@
   from = "/2020/1213-ec2-user-delete/"
   to = "/blog/ec2-user-delete/"
   force = true
+
+[[redirects]]
+  from = "/2020/1121-dependency-inversion-principle/"
+  to = "/blog/dependency-inversion-principle/"
+  force = true
+
+[[redirects]]
+  from = "/2020/1115-factory-method-and-abstract-factory/"
+  to = "/blog/factory-method-and-abstract-factory/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1108-value-object/"
+  to = "/blog/value-object/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1103-think-about-switch/"
+  to = "/blog/think-about-switch/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1102-interface-segregation-principle/"
+  to = "/blog/interface-segregation-principle/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1029-liskov-substitution-principle/"
+  to = "/blog/liskov-substitution-principle/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1027-open-closed-principle/"
+  to = "/blog/open-closed-principle/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1023-php-multiple-process/"
+  to = "/blog/php-multiple-process/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1016-factory-method/"
+  to = "/blog/factory-method/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1014-single-responsibility-principle/"
+  to = "/blog/single-responsibility-principle/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1011-ruby-keyword-arguments/"
+  to = "/blog/ruby-keyword-arguments/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/1003-pluggable-selector-pattern/"
+  to = "/blog/pluggable-selector-pattern/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0921-event-test-plan/"
+  to = "/blog/event-test-plan/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0912-sql-style-guide/"
+  to = "/blog/sql-style-guide/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0905-docker-mysql-environment-values/"
+  to = "/blog/docker-mysql-environment-values/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0829-gof-design-patterns/"
+  to = "/blog/gof-design-patterns/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0811-pdo-error-handling/"
+  to = "/blog/pdo-error-handling/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0705-code-review-7/"
+  to = "/blog/code-review-7/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0531-book-ddd-beginner/"
+  to = "/blog/book-ddd-beginner/"
+  force = true
+  
+[[redirects]]
+  from = "/2020/0216-s3-cloudfront-static-site/"
+  to = "/blog/s3-cloudfront-static-site/"
+  force = true
+  

@@ -4,6 +4,7 @@ export default {
     '@nuxtjs/sitemap', 
     '@nuxtjs/style-resources'
   ],
+  target: 'static',
   components: true,
   styleResources: {
     scss: [
