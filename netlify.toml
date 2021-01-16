@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/2020/:date-:slug"
-  to = "/blog/:slug"
+  from = "/2020/1213-ec2-user-delete/"
+  to = "/blog/ec2-user-delete/"
   force = true
