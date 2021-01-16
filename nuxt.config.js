@@ -2,7 +2,8 @@ export default {
   modules: [
     '@nuxt/content', 
     '@nuxtjs/sitemap', 
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/google-analytics'
   ],
   target: 'static',
   components: true,
@@ -40,6 +41,14 @@ export default {
       const articles = await $content('articles').only(['path', 'slug']).fetch()
 
       return articles.map(article => '/blog/' + article.slug)
+    }
+  },
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_TRACKING_ID
     }
   }
 }
