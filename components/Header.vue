@@ -5,7 +5,6 @@
     </div>
     <nav class="header__navi">
       <ul>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
         <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       </ul>
     </nav>
@@ -19,7 +18,7 @@
   justify-content: space-between;
   margin-bottom: 20px;
   &__title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     vertical-align: middle;
   }
 }

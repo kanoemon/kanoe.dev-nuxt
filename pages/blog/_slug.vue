@@ -66,7 +66,7 @@ export default {
   &__meta {
     margin-bottom: 40px;
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -85,6 +85,8 @@ export default {
 /** ブログ記事内 */
 ::v-deep .nuxt-content {
   font-weight: 500;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $color-text-light;
 
   h2, h3, h4, h5 {
     font-weight: 500;
@@ -100,6 +102,11 @@ export default {
     border-bottom: 1px solid $color-primary;
     margin: 2rem 0;
     font-size: 1.25rem;
+  }
+
+  code {
+    font-size: 0.9rem;
+    font-family: $font-family-code;
   }
 
   p {

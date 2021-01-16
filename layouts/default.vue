@@ -2,13 +2,13 @@
   <div class="wrapper">
     <Header />
     <Nuxt />
-    <TheFooter />
+    <Footer />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .wrapper {
   margin: 0 auto;
-  max-width: 42rem;
+  max-width: 50rem;
 }
 </style>

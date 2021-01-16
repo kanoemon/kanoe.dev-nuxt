@@ -24,6 +24,12 @@ export default {
     title: 'kanoe.dev',
     meta: [
       { charset: 'utf-8' }
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/86ced1b7f3.js',
+        crossorigin: 'anonymous'
+      }
     ]
   }
 }
