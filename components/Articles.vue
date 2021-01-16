@@ -2,6 +2,8 @@
   <ul class="articles">
     <li v-for="article of articles" :key="article.slug" class="articles__item">
       {{ formatDate(article) }}
+      {{ article.createdAt }}
+      {{ article.date }}
       <span class="separation">-</span>
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
         {{ article.title }}
