@@ -5,7 +5,7 @@
       {{ formatDate(article) }} - 
       <span class="tags">
           <span v-for="tag of article.tags" :key="tag">
-            <NuxtLink :to="`tags/${tag}`">
+            <NuxtLink :to="`/blog/tags/${tag}`">
               #{{ tag }}
             </NuxtLink>
           </span>
@@ -16,7 +16,7 @@
     <div class="tags">
       <ul>
         <li v-for="tag of article.tags" :key="tag">
-          <NuxtLink :to="`tags/${tag}`">
+          <NuxtLink :to="`/blog/tags/${tag}`">
             #{{ tag }}
           </NuxtLink>
         </li>
@@ -89,6 +89,7 @@ export default {
   font-weight: 500;
   padding-bottom: 2rem;
   border-bottom: 1px solid $color-text-light;
+  line-height: 2;
 
   a {
     color: $color-primary;
@@ -116,7 +117,6 @@ export default {
   }
 
   p {
-    line-height: 2;
     margin: 1.5rem 0;
   }
 
