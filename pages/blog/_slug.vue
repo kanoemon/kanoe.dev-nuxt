@@ -111,6 +111,10 @@ export default {
     font-size: 1.25rem;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   code {
     font-size: 0.9rem;
     font-family: $font-family-code;
